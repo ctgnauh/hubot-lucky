@@ -2,7 +2,7 @@
 #   A hubot script that test your luck
 #
 # Commands:
-#   hubot roll my luck
+#   hubot roll my luck - Reply with your luck
 #
 # Author:
 #   ctgnauh <huangtc@outlook.com>
@@ -21,7 +21,7 @@ module.exports = (robot) ->
     if _.keys(luckHistory).length is 0
       luckHistory[user] = {timestamp: -1, luck: -1}
 
-    if timestamp >= luckHistory[user].timestamp + 3600000
+    if timestamp >= luckHistory[user].timestamp + 86400000
       result = msg.random lucks
       resultIndex = lucks.indexOf result
       luckHistory[user] = {timestamp: timestamp, luck: resultIndex}
