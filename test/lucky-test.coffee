@@ -13,4 +13,4 @@ describe 'lucky', ->
     require('../src/lucky')(@robot)
 
   it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/roll my luck/)
+    expect(@robot.respond).to.have.been.calledWith(/roll my luck/i)
