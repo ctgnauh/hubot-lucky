@@ -1,7 +1,7 @@
 {
   "name": "hubot-lucky",
   "description": "A hubot script that test your luck",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "ctgnauh <huangtc@outlook.com>",
   "license": "MIT",
   "keywords": "hubot,hubot-scripts,funny,roll",
