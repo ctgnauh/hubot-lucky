@@ -12,7 +12,7 @@ _ = require "underscore"
 lucks = ['大吉', '中吉', '小吉', '吉', '末吉', '凶', '大凶']
 
 module.exports = (robot) ->
-  robot.respond /roll my luck/, (msg) ->
+  robot.respond /roll my luck/i, (msg) ->
     now = new Date
     timestamp = now.getTime()
     user = msg.message.user.name
